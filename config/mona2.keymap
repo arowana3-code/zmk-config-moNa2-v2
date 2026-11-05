@@ -184,7 +184,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y                   &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                      &kp G                                     &to 4      &kp H                   &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B            &lt 10 F2                &to 8      &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B            &lt 10 TAB               &to 8      &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT MINUS
 &kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANG_ZENKAKUHANKAKU  &lt 2 BACKSPACE  &lt 6 INTERNATIONAL_5    &kp ENTER  &lt_to_layer_0 2 SPACE                             &lt_to_layer_0 8 ESC
             >;
 
@@ -209,7 +209,7 @@
 &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                                   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
 &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                         &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp GRAVE
 &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp PLUS   &kp MINUS         &kp STAR           &kp SLASH      &kp QMARK         &kp UNDER
-&kp LCTRL        &kp LEFT_GUI   &kp LEFT_ALT  &trans                &trans                 &trans       &kp ENTER  &kp SPACE                                                             &kp RIGHT_SHIFT
+&kp LCTRL        &kp LEFT_GUI   &kp LEFT_ALT  &trans                &kp BACKSPACE          &trans       &kp ENTER  &kp SPACE                                                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
@@ -284,10 +284,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7    &kp F8    &kp F9    &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp F11  &kp F12  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
 
