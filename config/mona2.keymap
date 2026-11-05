@@ -185,10 +185,10 @@
 &kp Q             &kp W         &kp E         &kp R             &kp T                                               &kp Y                   &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F             &kp G                                &kp MINUS      &kp H                   &kp J  &kp K      &kp L    &lt 4 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B            &kp F2              &kp SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &lt 10 SLASH
-&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_4  &lt 2 BACKSPACE  &lt 6 LANGUAGE_5    &kp ENTER      &lt_to_layer_0 2 SPACE                             &kp RIGHT_SHIFT
+&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_4  &lt 2 BACKSPACE  &lt 6 LANGUAGE_5    &kp ENTER      &lt_to_layer_0 2 SPACE                             &lt 8 RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&rsr_default>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&rsr_default>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         mac_layer {
@@ -206,10 +206,10 @@
         num_win {
             display-name = "NUM_W";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5                            &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
-&kp TAB       &kp PERCENT           &kp CARET              &kp AMPERSAND     &kp ASTERISK                 &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp GRAVE
-&kp PIPE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PLUS   &kp PIPE          &kp STAR           &kp SLASH      &kp QMARK         &kp UNDER
-&kp LCTRL     &kp LEFT_GUI          &kp LEFT_ALT           &trans            &trans             &trans    &kp ENTER  &kp SPACE                                                             &kp RIGHT_SHIFT
+&kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                                &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0
+&kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                      &kp PIPE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp GRAVE
+&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &kp PLUS   &kp MINUS         &kp STAR           &kp SLASH      &kp QMARK         &kp UNDER
+&kp LCTRL        &kp LEFT_GUI   &kp LEFT_ALT  &trans                &trans                 &trans    &kp ENTER  &kp SPACE                                                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>, <&inc_dec_kp K_VOL_UP K_VOL_DN>;
@@ -230,10 +230,10 @@
         mouse_win {
             display-name = "MOUSE_W";
             bindings = <
-&kp ESCAPE                  &kp LC(Z)       &kp UP_ARROW    &kp LC(Y)        &kp LC(V)                                  &kp CARET         &kp HOME   &kp PAGE_UP    &kp END    &kp RIGHT_PARENTHESIS
-&kp TAB                     &kp LEFT_ARROW  &screenshot     &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1   &mkp MB3       &mkp MB2   &henkan
-&mt LEFT_SHIFT KP_NUMBER_0  &kp LC(Y)       &kp DOWN_ARROW  &kp END          &kp HOME      &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp LC(V)  &kp PAGE_DOWN  &kp LC(C)  &kp LC(SPACE)
-&kp LCTRL                   &trans          &trans          &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                          &kp PIPE
+&kp ESCAPE              &kp F2          &kp UP_ARROW  &kp F4           &kp F5                                &to 0          &kp HOME   &kp PAGE_UP    &kp END    &to 0
+&kp TAB                 &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp ASTERISK               &to 0      &to 0          &mkp MB1   &mkp MB3       &mkp MB2   &to 0
+&mt (LEFT_SHIFT) LC(Z)  &kp LC(Y)       &kp LC(C)     &kp LC(V)        &kp HOME      &kp EQUAL    &to 0      &to 0          &kp LC(V)  &kp PAGE_DOWN  &kp LC(C)  &to 0
+&kp LCTRL               &trans          &trans        &trans           &trans        &trans       &kp ENTER  &kp BACKSPACE                                       &kp LA(TAB)
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -278,10 +278,10 @@
         function_win {
             display-name = "FN_W";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7    &kp F8    &kp F9    &kp F10
+&kp F11  &kp F12  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
         };
 
