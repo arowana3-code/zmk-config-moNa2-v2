@@ -3,7 +3,6 @@
    (LEFT 側でも runtime processor ノードを定義しないと
    /runtime_input_processor が空ノード扱いになり processor-label エラーになるため) */
 #include <input/processors/runtime-input-processor.dtsi>
-#include <behaviors/battery_history_request.dtsi>
 
 
 &kscan0 {
